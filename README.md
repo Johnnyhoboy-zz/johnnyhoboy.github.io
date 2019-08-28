@@ -1,2 +1,2 @@
-# Johnnyhoboy.github.io
+# johnnyhoboy.github.io
 Personal Portfolio Website

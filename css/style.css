@@ -124,7 +124,7 @@ button:focus {
       height: 2px;
       width: 100px;
       content: "";
-      background: #e45447;
+      background: #0070C0;
       margin-left: -50px; }
       @media (max-width: 767px) {
         .main-title h1:before {
@@ -136,7 +136,7 @@ button:focus {
       height: 10px;
       width: 10px;
       content: "";
-      background: #e45447;
+      background: #0070C0;
       margin-left: -5px;
       border-radius: 50%; }
       @media (max-width: 767px) {
@@ -163,7 +163,7 @@ button:focus {
   outline: none !important;
   text-align: center;
   text-transform: capitalize;
-  border: 2px solid #90acd1;
+  border: 2px solid #0070C0;
   border-radius: 50px;
   cursor: pointer;
   -webkit-transition: all 0.4s ease 0s;
@@ -171,7 +171,7 @@ button:focus {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s; }
   .primary-btn:hover {
-    background: #e45447;
+    background: #0070C0;
     color: #fff;
     border: 2px solid transparent; }
 
@@ -202,14 +202,14 @@ button:focus {
       .header_area .navbar .nav .nav-item .nav-link {
         font: 500 12px/100px "Roboto", sans-serif;
         text-transform: capitalize;
-        color: #000;
+        color: black;
         padding: 0px;
         display: inline-block;
         font-size: 16px; }
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #ffffff; }
+        color: #dddddd; }
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -218,7 +218,7 @@ button:focus {
           border-radius: 0px;
           box-shadow: none;
           margin: 0px;
-          background: #ffd200; }
+          background: #F9F9FF; }
           @media (min-width: 992px) {
             .header_area .navbar .nav .nav-item.submenu ul {
               position: absolute;
@@ -264,7 +264,7 @@ button:focus {
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
               border-bottom: none; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-              background: #e45447;
+              background: #F9F9FF;
               color: #fff; }
         @media (min-width: 992px) {
           .header_area .navbar .nav .nav-item.submenu:hover ul {
@@ -281,7 +281,7 @@ button:focus {
     top: -70px;
     left: 0;
     right: 0;
-    background: #ffd200;
+    background: #F9F9FF;
     transform: translateY(70px);
     transition: transform 500ms ease, background 500ms ease;
     -webkit-transition: transform 500ms ease, background 500ms ease;
@@ -316,14 +316,18 @@ button:focus {
   background-size: cover;
   background-repeat: no-repeat; }
 .banner-area .slide_bg1 {
-  background: url(../img/banner/banner-bg1.jpg); }
+  background: url(../img/banner/banner-bg1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  /*
 .banner-area .slide_bg2 {
   background: url(../img/banner/banner-bg2.jpg); }
 .banner-area .slide_bg3 {
   background: url(../img/banner/banner-bg3.jpg); }
+  */
 @media (max-width: 991px) {
-  .banner-area .fullscreen {
-    height: 600px !important; } }
+  .banner-area {
+    height: 750px !important; } }
 
 .banner-content {
   text-align: left; }
@@ -336,15 +340,19 @@ button:focus {
       background: #fff;
       margin: 0 15px; } }
   .banner-content .primary-btn {
-    background: #e45447;
-    border: 2px solid transparent;
-    color: #fff; }
+    background: #F9F9FF;
+    border-color: black;
+    border: 1px solid;
+    color: rgb(0, 0, 0); }
     .banner-content .primary-btn:hover {
-      background: transparent;
-      border-color: #e45447;
-      color: #000; }
+      background: #0E78C3;
+      border-color:white;
+      color: white; }
   .banner-content h1 {
-    color: #000;
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 20px; }
@@ -356,6 +364,9 @@ button:focus {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     color: #000;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
     margin-bottom: 30px; }
     @media (max-width: 991px) {
       .banner-content h3 {
@@ -372,7 +383,7 @@ button:focus {
     overflow: hidden;
     width: 100%;
     min-height: 400px;
-    background-image: url(../img/banner/common-banner.jpg);
+    background-color: #F9F9FF;
     background-size: cover;
     z-index: 1; }
     .banner_area .banner_inner .banner_content h1 {
@@ -418,7 +429,7 @@ button:focus {
 /* Projects Area css
 ============================================================================================ */
 .projects_fillter {
-  background: #ffd200; }
+  background: #91C5EE; }
   .projects_fillter .filter {
     position: relative;
     text-align: center;
@@ -434,7 +445,7 @@ button:focus {
       height: 100%;
       width: 96%;
       content: "";
-      background: #ffe6db;
+      background: #BBEAFF;
       z-index: -1; }
     .projects_fillter .filter li {
       display: inline-block;
@@ -446,7 +457,7 @@ button:focus {
       .projects_fillter .filter li:last-child {
         margin-right: 0px; }
       .projects_fillter .filter li.active, .projects_fillter .filter li:hover {
-        color: #e45447; }
+        color: white; }
 
 .projects_inner {
   margin-bottom: -30px; }
@@ -1272,7 +1283,7 @@ button:focus {
     top: 0;
     font-size: 20px;
     line-height: 24px;
-    color: #e45447;
+    color: #0070C0;
     font-weight: 600; }
   .contact_info .info_item h6 {
     font-size: 16px;
@@ -2761,7 +2772,7 @@ h6 {
     margin-bottom: 23px; }
 
   .header_area .navbar {
-    background: #e45447; }
+    background: #F9F9FF; }
 
   .navbar-toggler[aria-expanded="false"] span:nth-child(2) {
     opacity: 1; }
@@ -2783,7 +2794,7 @@ h6 {
     display: block;
     width: 25px;
     height: 3px;
-    background: #fff;
+    background: black;
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;
@@ -2845,7 +2856,7 @@ h6 {
 /* Footer Area css
 ============================================================================================ */
 .footer_area {
-  background: #ffd200; }
+  background: #F9F9FF }
 
 .social_widget .f_title h4 {
   font-size: 21px;
@@ -2861,7 +2872,7 @@ h6 {
   margin-right: 40px;
   display: inline-block; }
   .social_widget .list li a {
-    color: #c48e0b;
+    color: #2A2E31;
     font-size: 36px;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
@@ -2870,14 +2881,14 @@ h6 {
   .social_widget .list li:last-child {
     margin-right: 0px; }
   .social_widget .list li:hover a {
-    color: #e45447; }
+    color: #0070C0; }
 
 .copyright {
   margin-top: 40px; }
   .copyright p {
     color: #000; }
     .copyright p a {
-      color: #e45447; }
+      color:#0070C0; }
 
 /* End Footer Area css
 ============================================================================================ */

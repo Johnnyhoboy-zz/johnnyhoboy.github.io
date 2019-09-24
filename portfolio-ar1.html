@@ -127,7 +127,9 @@
 						</div>
 					</div>
 				</div>
-				<img class="img-fluid" src="img/portfolio/dt_ip.png">
+				<div class="row justify-content-center">
+					<img class="img-fluid" width="800" height="720" src="img/portfolio/dt_ip.png">
+				</div>
 				<p><b><h3>Background</h3></b></p>
 				<p>
 					If you were looking for a specific product, you would have a hard time searching for that product if you didn't know what
@@ -190,7 +192,7 @@
 					develop an iOS AR app and overlay content in AR space upon detection of an ARObject on camera. A spitekit pop up scene with the tool picture,
 					title, description, and a placeholder "Add to Cart" button were overlaid on top. Preliminary results shown above saw that the Titebond wood 
 					glue and Esun 3D Filament box were quickly detected within a second or less. Additionally, multiple objects can be detected in the same frame.
-
+					<br /><br />
 					Next, I used the THD mugs to test if one scanned point cloud could detect an identical product. I first placed one mug down and it detected it,
 					then placed the second mug down on the right and it also detected it while shifting the pop up above the right mug. The THD mugs were a bit 
 					reflective so I could only get it to work at the front-facing angle properly. Nonetheless, it showcased that the same ARObject of one model 
@@ -205,7 +207,7 @@
 					You can see the final result above, as well as a playable demo video below:
 				</p>
 				<div class="row justify-content-center">
-					<video width="500" height="500" controls>
+					<video width="500" height="550" controls>
 						<source src="img/portfolio/thd_vid.mp4" type="video/mp4">
 						Your browser does not support the video tag.
 					</video>
@@ -215,17 +217,18 @@
 					Overall the whole project was considered a success thanks to the abundance of resources and tutorials available to learn ARKit 2.0. I was able to
 					successfully scan multiple tools around the office and convert them into point cloud models. I created an iOS prototype app that could detect those
 					models on camera at a fast detection rate and overlay information in AR space. The same ARObject model of one object can also be used to detect
-					another identical object. 
+					another identical object. This project was formally demo'ed at the OrangeWorks end of semester presentations to fellow interns, staff software
+					engineers, and visiting engineering managers and various full-time workers from The Home Depot Corporate. 
 					<br /><br />
 					Some changes I were to make if I looked back on this project would have been to try implementing buttons in screen space to allow the user to 
 					click on a link that would pull up on their browser instead of pop ups. While a visually cool effect, trying to scroll on those pop up windows was 
 					very wonky and not a completely satisfying user experience. It gave me ideas relating back to the ideate phase of the project and for future ARkit hacks.
 					<br /><br />
 					As augmented reality frameworks and smartphones get more powerful with every release, I can see a futre where AR will be a ubiquitous technology that's used
-					more in our current mobile applications. Imagine having a databse of ARObjects that are pre-scaned and having an implementation in the current Home Depot 
+					more in our current mobile applications. Imagine having a database of ARObjects that are pre-scaned and having an implementation in the current Home Depot 
 					mobile app that allowed the user to use the camera to detect any THD tool and instantly display helpful info. With ARObjects being a small file size of less
-					than 2mb, we have the potential to store many point cloud models. This project could be extended for use in weable mixed reality headsets as well. Imagine a 
-					worker needing to build a component from smaller parts. The headset could provide helpful instructions and continuously monitor specific objects needed at
+					than 2mb, we have the potential to store many point cloud models. This is also an alternative to training models with machine learning that can lead to far more accurate results.
+					This project could be extended for use in weable mixed reality headsets as well. Imagine a worker needing to build a component from smaller parts. The headset could provide helpful instructions and continuously monitor specific objects needed at
 					each step of the process. 
 				</p>
 				<div class="text-right">

@@ -38,9 +38,9 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 							<ul class="nav navbar-nav menu_nav justify-content-end">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+								<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
-								<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+								<li class="nav-item active"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
 								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
 								<!--
 								<li class="nav-item active submenu dropdown">
@@ -78,17 +78,17 @@
 
 	<!--================ Start portfolio Banner Area =================-->
 	<section class="banner_area">
-			<div class="banner_inner d-flex align-items-center">
-				<div class="container">
-					<div class="banner_content text-right">
-						<h1>Portfolio Details</h1>
-						<div class="page_link">
-							<a href="portfolio.html"> Back to Portfolio</a>
-						</div>
+		<div class="banner_inner d-flex align-items-center">
+			<div class="container">
+				<div class="banner_content text-right">
+					<h1>Portfolio project</h1>
+					<div class="page_link">
+						<a href="portfolio.html"> Back to Portfolio</a>
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 	<!--================ End Portfolio Banner Area =================-->
 
 	<!--================ Start Portfolio Details Area =================-->
@@ -97,23 +97,27 @@
 			<div class="portfolio_details_inner">
 				<div class="row">
 					<div class="col-md-6">
-						<div class="left_img">
-							<img class="img-fluid" src="img/works/project-details-1.jpg" alt="">
+						<div class="left_img"><br /><br />
+							<img class="img-fluid" src="img/portfolio/nike_mark.PNG" alt="">
 						</div>
 					</div>
 					<div class="offset-md-1 col-md-5">
 						<div class="portfolio_right_text mt-30">
-							<h4>Lavendar ambient colorlib</h4>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore
-								magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+							<h3>MARK - AR Shoe Detection</h3>
+							<p>
+								Summer 2019 Hack72 team project for Nike Global Technology's annual intern hackathon.
+								This was my original idea inspired by ARKit and submitted for the hackathon. My idea got 
+								picked with a total of 45+ votes, and I led a team of 10 interns and mentors to work for 3 consecutive days 
+								and then a week of presentation rehersals. Our hack won 3rd place overall and was honored during the ceremony!</p>
 							<ul class="list">
+								<!--
 								<li><span>Rating</span>: <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-									 class="fa fa-star"></i></li>
-								<li><span>Client</span>: colorlib</li>
-								<li><span>Website</span>: colorlib.com</li>
-								<li><span>Completed</span>: 17 Aug 2018</li>
+									 class="fa fa-star"></i></li>-->
+								<li><span>Client:</span>Nike, Inc</li>
+								<li><span>Website:</span><a href="https://github.com/Johnnyhoboy/MARK">Github repo</a></li>
+								<li><span>Completed:</span>August 1st, 2019</li>
 							</ul>
+							<!--
 							<ul class="list social_details">
 								<li><a href="#"><i class="fa fa-facebook"></i></a></li>
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -121,27 +125,113 @@
 								<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
 								<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
 							</ul>
+							-->
 						</div>
 					</div>
 				</div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-					magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat.
-					Duis aute irure dolor in reprehenderit.</p>
-				<p>Voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-					sunt
-					in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-					voluptatem
-					accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-					architecto
-					beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-					quia
-					consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
-					quia
-					dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
-					magnam
-					aliquam quaerat voluptatem.</p>
+				<div class="row justify-content-center">
+					<img class="img-fluid" width="800" height="720" src="img/portfolio/dt_ip.png">
+				</div>
+				<p><b><h3>Background</h3></b></p>
+				<p>
+					Do you ever see someone wearing a cool Nike shoe, but then you don't know the shoe model so you can't find it online? Don't you wish
+					you could somehow use your phone to instantly detect the shoe model without having to reverse image search or finding your closest
+					sneakerhead friend? This is an example of a missed purchase opportunity for Nike. 
+					<br /><br />
+					AR frameworks (particularly ARKit) are getting more powerful and ubiquitous every year. Apple has provided a 3D scanning app that allows users to scan an object anywhere between the size of a ball to a chair. 
+					It does this by building the dense point cloud of what the camera sees and then exports it as an "ARObject" extension so developers can use it in XCode. This point cloud 
+					could actually be used to represent a specific object. If we can match point clouds to specific objects, we can create an application where you can "scan" shoes with
+					your phone and have it tell you exactly what that shoe is!
+					<br /><br />
+					Nike generates a lot of traffic through both their desktop site and mobile apps. In the month of June 2019, the amount of traffic to the 
+					mobile app was around 3.2 million visitors, with a total of 15,040 purchases, which results in around a 0.47% conversion rate of buyers.
+					If there was a feature that was in our current Nike mobile app that could assist this missed purchase opportunity, it would boost mobile traffic
+					and effectively give a slight boost to buyer conversion rate.
+					<br /><br />
+					Nike has also been experimenting with emerging AR technologies in recent years. The SNKRs app has utilized AR for shoe drops in the past where 
+					it had the user to go a physical location, scan an image, and then they are brought to the checkout page. This effectively helped combat user scripts
+					and bots that snagged all the quantity upon release of a drop, while providing a cool user experience. NikeFit was also a new feature that rolled onto 
+					the Nike app this past summer. It used ARkit to scan your feet and determined your estimated shoe size all in the comfort of the user's home. 
+				</p>
+				<p><b><h3>Goal</h3></b></p>
+				<p>
+					Our goal for this hackathon was to create a MVP in the span of 3 days with a team of 10 interns led by me. Having prior ARKit experience, I expanded
+					on my knowledge and aimed to create a new feature that could be implemented in the current Nike mobile app. The team was split into three subgroups: the
+					development team with interns who had prior iOS/Swift experience, the presentation team which led the creation of skits, powerpoints, and market research,
+					and finally the scanning support team which brought in popular Nike shoes and did the object scanning process. Our final product was to be demo'ed with a
+					8 minute presentation to the Global Technology intern class and key engineer managers as well as the new CIO.
+					<br /><br />
+
+				</p>
+				<p><b><h3>Process</h3></b></p>
+				<div class="row justify-content-center">
+					<video width="650" height="400" controls>
+						<source src="img/portfolio/mark_vid.MP4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<p>
+					Similar to my AR Tool Detection project, shoes were gathered from the team that were deemed "hype" or popular. For the purposes of time, only the left shoe
+					was scanned from each pair. These included the Nike Air Max 270 React, Air Force 1 Low Types, Air Jordan IV Cool Greys, Air Max 90s, and a competitor shoe
+					as shown above. All shoes were scanned through Apple's 3D Scanning app in a well lit room on a black table until the ARObjects exported were determined to be of quality.
+					<br /><br />
+					The development team then designed custom spritekit scene pop ups that would appear right above the shoe model. These contained a high quality retail image
+					of the shoe, the shoe name, and the color scheme. Additionally, a button called "Get 'Em" was added later on that would pop up when it detected the shoe model. Clicking on it
+					would lead the user to the respective product page on Nike.com where the user can then log in and immediately add the product to cart. 
+				</p>
+				<p><b><h3>Results</h3></b></p>
+				<div class="row justify-content-center">
+					<video width="650" height="400" controls>
+						<source src="img/portfolio/mark_skit.MP4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<p>
+					The above video is our final test in an outdoor environment. One of our team members wore a scanned shoe and then I took an iPad with our prototype app installed and
+					tried hovering over the shoe for a few seconds. While a bit slower than indoor conditions, the camera detected the shoe model and overlaid the pop up screen. I then clicked
+					the "GET 'EM" button that took me to the respective webpage for the Air Max 90s. A similar process was shown on stage as part of a live demo during the presentation.
+				</p>				
+				<div class="row justify-content-center">
+					<video width="650" height="400" controls>
+						<source src="img/portfolio/mark_joke.MP4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<p>
+					My team even had time to implement a fun easter egg that triggered when you try to scan a certain competitor's shoe :) 
+				</p>
+				<div class="row justify-content-center">
+					<a href="https://drive.google.com/open?id=1YuEgTRgAh9jOTKfTGENg2e3LJ-T1dl_K">
+						<img class="img-fluid" width="800" height="720" src="img/portfolio/mark_title.jpg">
+					</a>
+				</div>
+				<p>
+					You can find our team's final presentation slides by clicking above and posted <a href="https://drive.google.com/open?id=1YuEgTRgAh9jOTKfTGENg2e3LJ-T1dl_K">here</a>.
+					There we showcase our market research of footwear revenue, detail our implementation, measure the impact we would have on Nike, as well as a future rollout strategy
+					with a timeline and projected growth. Our presentation won 3rd place overall in the top 10 selected Global Technology teams!
+				</p>
+				<p><b><h3>Summary</h3></b></p>
+				<div class="row justify-content-center">
+					<img class="img-fluid" width="800" height="720" src="img/portfolio/mark_team.png">
+				</div>
+				<p>
+					Overall the hackathon project was a huge success granting us the bronze title in Hack72. I was able to successfully pitch my hackathon project, have it get voted
+					as one of the top 10 ideas, and lead a team of people while splitting them into sub-groups based on their strengths. The project is now published on Nike's internal
+					hackathon website and will be shown to future interns for inspiration.
+					<br /><br />
+					This project was also a result of my prior ARkit experience from my internship with Home Depot. I expanded upon my AR Tool Detection project and extended the idea to Nike shoes.
+					I was able to build on the weaknesses of my previous project and reiterate on the ideate phase. One of the new ideas was the creation of a button that took users to the customer site instead of
+					overlaying the website in AR space which has proved to be a bit wonky. This led to another unique AR prototype that I'm proud to showcase.
+					<br /><br />
+					As augmented reality frameworks and smartphones get more powerful with every release, I can see a futre where AR will be a ubiquitous technology that's used
+					more in our current mobile applications. Imagine having a database of thousands of shoes that are pre-scaned and having an implementation in the current Nike
+					mobile app that allowed the user to use the camera to detect any shoe and instantly display helpful info. With ARObjects being a small file size of less
+					than 2mb, we have the potential to store many point cloud models. This is also an alternative to training models with machine learning that can lead to far more accurate results.
+					Nike has already put out ARKit features into production with their mobile app and SNKRs, so a feature like this isn't too far-fetched to be implemented. 
+				</p>
+				<div class="text-right">
+					<a href="#" class="primary-btn">Back to top</a>
+				</div>
 			</div>
 		</div>
 	</section>

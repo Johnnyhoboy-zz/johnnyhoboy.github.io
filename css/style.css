@@ -1608,7 +1608,7 @@ sup,
 sub,
 u,
 del {
-  color: #f8b600; }
+  color: #007BCE; }
 
 h1 {
   font-size: 36px; }
@@ -1634,7 +1634,7 @@ h6 {
 .typography h4,
 .typography h5,
 .typography h6 {
-  color: #777777; }
+  color: black; }
 
 .button-area .border-top-generic {
   padding: 70px 15px;

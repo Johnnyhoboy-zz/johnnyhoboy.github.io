@@ -103,7 +103,7 @@
 					</div>
 					<div class="offset-md-1 col-md-5">
 						<div class="portfolio_right_text mt-30">
-							<h3>MARK - AR Shoe Detection</h3>
+							<h3>Pirated Identity</h3>
 							<p>
 								Pirated Identity is a 3D indie game that my group developed over the course of a semester for CS 4455 Video Game Design at Georgia Tech.
 								It is defined as a 3rd person action/shooter "game feel" game with an explorable world and story. This game achieved a high 99/100 overall
@@ -140,7 +140,8 @@
 					<br /><br />
 					Game feel is usually attributed to spatial games whose mechanics involve controlling the movement of objects or characters. Since the majority of games are spatial, studies 
 					involving game feel mainly focus on the movement and physical interactions between objects in games. The goal of good game feel is to immerse the player in an engaging and 
-					rewarding experience. A way to test game feel is to see if interacting with a game's most basic mechanics feels satisfying. 
+					rewarding experience. A way to test game feel is to see if interacting with a game's most basic mechanics feels satisfying. Our assignment was to therefore create a game feel
+					game over the course of the entire semester, incorporating elements of game feel one at a time. 
 					<br /><br />
 				</p>
 				<p><b><h3>Goal</h3></b></p>
@@ -153,79 +154,82 @@
 					<div class="row justify-content-center">
 						<img class="img-fluid" src="img/portfolio/pi_mirror.png">
 					</div>
-					Our game has a clearly defined, achievable objective/goal. The player’s object is to search for their mirror identity and match its color. The protagonist has forgotten their
-					color identity and must fight through a maze which their trapped identity is captured. The player does not know which color (red, blue, green) their identity is and must gather clues
+					Our game has a clearly defined, achievable objective/goal. The player's character is to search for their mirror identity that was stolen by pirates and match its color. The protagonist has forgotten their
+					true color identity and must fight through a maze which their trapped identity is captured in. The player does not know which color (red, blue, green) their identity is and must gather clues
 					throughout the game to figure out. This is hinted at during the cutscene, 
-					and also in the book instructions in the starting room. The book is placed in one of the corners of the starting room indicated by a ring of blue light. The user can press the spacebar
-					to read the book. If the player reaches the reflection door without a key, a popup will indicate they need to find a key.
+					and also in the book instructions in the starting room. If the player reaches the room which their identity is trapped in without a key, a popup will indicate they need to find a key.
 					<br /><br />
 
 				</p>
 				<p><b><h3>Process</h3></b></p>
 				<div class="row justify-content-center">
-					<video width="650" height="400" controls>
-						<source src="img/portfolio/mark_vid.MP4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
+					<img class="img-fluid" width="800" height="500" src="img/portfolio/pi_controls.png">
 				</div>
 				<p>
-					Similar to my AR Tool Detection project, shoes were gathered from the team that were deemed "hype" or popular. For the purposes of time, only the left shoe
-					was scanned from each pair. These included the Nike Air Max 270 React, Air Force 1 Low Types, Air Jordan IV Cool Greys, Air Max 90s, and a competitor shoe
-					as shown above. All shoes were scanned through Apple's 3D Scanning app in a well lit room on a black table until the ARObjects exported were determined to be of quality.
+					There were many requirements to a game feel game that we can to ideate on in order to include in our indie game. The first thing we decided on was the basic controls of the game.
+					Our game’s choice of controls is intuitive and appropriate. This is because we chose the common MMORPG style controls. WASD to move the character and the left mouse button to attack. 
+					This allows the player to comfortably move the character with their left hand and shoot using their right hand. For the purposes of the assignment and for sake of time, left handed controls
+					and other assistive controllers were not considered at the time. 
+				</p>
+				<div class="row justify-content-center">
+					<img class="img-fluid" src="img/portfolio/pi_color.png">
+				</div>
+				<p>
+					Next, we had to decide on our interesting mechanic that would make our game unique or alternatively, expand on a current popular game mechanic. After many ideate and re-defining sessions,
+					we settled on the ability to change type or "Color Swap". Defeating an enemy of a certain color adds that color to the player’s color bar. There are three types of colors for red, blue, and green.
+					The player changes her color based on the bar that has the most points, with the most recent color if it is a tie. 
+					Minibosses have no color but will drop memory hints to what your reflection color will be as the reward for defeating a more difficult enemy.
+				</p>
+				<div class="row justify-content-center">
+					<img class="img-fluid" src="img/portfolio/pi_map.png">
+				</div>
+				<p>
+					In our alpha prototype, we did not have a way for the player to know where they were in the game. This lead me to think about implementing a minimap for our game. My team liked the idea and emphasized
+					with the idea that most gamers would love to have a minimap in the corner of the screen to reference their location and plan out their strategy. I quickly looked up ways to implement a minimap
+					in Unity and was able to provide a top-down camera feed way above the game with a icon indicating the direction of the player. Furthermore, we decided it would be cool to "reveal" rooms once you have been to them, similar to how popular adventure games
+					remove the "fog of war" after you have visited the map. 
 					<br /><br />
-					The development team then designed custom spritekit scene pop ups that would appear right above the shoe model. These contained a high quality retail image
-					of the shoe, the shoe name, and the color scheme. Additionally, a button called "Get 'Em" was added later on that would pop up when it detected the shoe model. Clicking on it
-					would lead the user to the respective product page on Nike.com where the user can then log in and immediately add the product to cart. 
+					We also had a requirement to implement procedurally generated or randomized content in the game. After careful thought, we decided that since our original vision was a sort of dungeon adventure crawler,
+					we wanted to have a set amount of rooms (10 enemy rooms, 2 mini boss rooms, 1 healing room, 1 switch room, 1 final room, and the starting room) that we would randomly generate the 4x4 grid map so that each
+					playthrough would be different. Additionally, the switch room was a neat concept thought on the spot where we could switch up the bridges that allowed the user to cross into different rooms. This could either
+					make it easier or harder for the player to get around the map. You can view the two states of the switch on the image above. 
+				</p>
+				<p><b><h3>Testing</h3></b></p>
+				<p>
+					I had mentioned we had an alpha prototype. That was our original gameplay test after we had completed our first iteration through the design thinking cycle and implemented a small demo. We recruited game testers through volunteer selection,
+					and all of them were current Georgia Tech students who have various levels of video game exposure. We sat them down individually and told them to try to complete the alpha demo within 5 minutes. As they were playing, we the developers were constantly
+					observing their movements and participants were instructed to "think aloud" so we heard their throughts and frustrations as well. If they could not finish the level within 5 minutes, we insturcted them to stop. We gathered all our
+					observation notes and came together to discuss similarites between all of them.
+					<br /><br />
+					After the playtest, we also sent out a short survey through Google Forms that included Likert scale questions ranging from 1-5 with 5 being the highest. Some examples were "The controls were easy to use" and "The game provides positive/negative feedback during gamplay"
+					There were also opened ended questions such as "What was your favorite part of the game" and "If you could change one thing, what would it be?". Results gathered from the survey were examined and showed that most people
+					enjoyed the game aestheics and challenge, however the controls and lack of an intuitive minimap needed more work. This took us back to the Empathize and Define phases of Design Thinking, and led us to Ideate new 
+					solutions that were feasible to add to our final game. 
 				</p>
 				<p><b><h3>Results</h3></b></p>
 				<div class="row justify-content-center">
-					<video width="650" height="400" controls>
-						<source src="img/portfolio/mark_skit.MP4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</div>
-				<p>
-					The above video is our final test in an outdoor environment. One of our team members wore a scanned shoe and then I took an iPad with our prototype app installed and
-					tried hovering over the shoe for a few seconds. While a bit slower than indoor conditions, the camera detected the shoe model and overlaid the pop up screen. I then clicked
-					the "GET 'EM" button that took me to the respective webpage for the Air Max 90s. A similar process was shown on stage as part of a live demo during the presentation.
-				</p>				
-				<div class="row justify-content-center">
-					<video width="650" height="400" controls>
-						<source src="img/portfolio/mark_joke.MP4" type="video/mp4">
-						Your browser does not support the video tag.
-					</video>
-				</div>
-				<p>
-					My team even had time to implement a fun easter egg that triggered when you try to scan a certain competitor's shoe :) 
-				</p>
-				<div class="row justify-content-center">
-					<a href="https://drive.google.com/open?id=1YuEgTRgAh9jOTKfTGENg2e3LJ-T1dl_K">
-						<img class="img-fluid" width="800" height="720" src="img/portfolio/mark_title.jpg">
+					<a href="https://drive.google.com/file/d/1-5gzjvhKzDkH8eGhugdNW5vOddWQmVqV/view">
+					<img class="img-fluid" width="800" height="450" src="img/portfolio/pi_vid.png">
 					</a>
 				</div>
 				<p>
-					You can find our team's final presentation slides by clicking above and posted <a href="https://drive.google.com/open?id=1YuEgTRgAh9jOTKfTGENg2e3LJ-T1dl_K">here</a>.
-					There we showcase our market research of footwear revenue, detail our implementation, measure the impact we would have on Nike, as well as a future rollout strategy
-					with a timeline and projected growth. Our presentation won 3rd place overall in the top 10 selected Global Technology teams!
-				</p>
+					Click the above video to watch me play the complete walkthrough of our indie game while explaining cool features along the way. A 10 minute presentation was also given in front of the entire class and teaching assistants. This
+					included a live demo of the game from start to finish as well as a powerpoint slide to supplement and highlight our game features. Afterwards, the TAs commented how "polished" our game was and after all presenations were done, we
+					let other fellow students play our game for fun. The final product received a 99/100 overall score and ranked one of the top projects of the class. It was shown to future students for inspiration to their game feel games.
+					<br /><br />
+					You can find the link to our presentation slides <a href="https://drive.google.com/open?id=1rP6FtHWhPaDvROmkvR6wThW8zTJFrfqNEAqWjcFeOL0">here</a> and the code to the complete Github repo and full description of everything we added
+					to the game at the top of this page.
+				</p>				
 				<p><b><h3>Summary</h3></b></p>
 				<div class="row justify-content-center">
-					<img class="img-fluid" width="800" height="720" src="img/portfolio/mark_team.png">
+					<img class="img-fluid" width="700" height="520" src="img/portfolio/pi_team.jpeg">
 				</div>
 				<p>
-					Overall the hackathon project was a huge success granting us the bronze title in Hack72. I was able to successfully pitch my hackathon project, have it get voted
-					as one of the top 10 ideas, and lead a team of people while splitting them into sub-groups based on their strengths. The project is now published on Nike's internal
-					hackathon website and will be shown to future interns for inspiration.
+					This was definitely one of my favorite class group projects I have done. I went from having minimal game development experience to producing a full fledged indie game in one semester. Huge thanks goes to the CS 4455 class and teaching
+					assistants that helped us in every step of the way. My teammates were also a good group of diverse majors (3 CS - Computer Science, 2 CM - Computational Media) that contributed their strengths in design, storymaking, testing, and front/back
+					end development. 
 					<br /><br />
-					This project was also a result of my prior ARkit experience from my internship with Home Depot. I expanded upon my AR Tool Detection project and extended the idea to Nike shoes.
-					I was able to build on the weaknesses of my previous project and reiterate on the ideate phase. One of the new ideas was the creation of a button that took users to the customer site instead of
-					overlaying the website in AR space which has proved to be a bit wonky. This led to another unique AR prototype that I'm proud to showcase.
-					<br /><br />
-					As augmented reality frameworks and smartphones get more powerful with every release, I can see a futre where AR will be a ubiquitous technology that's used
-					more in our current mobile applications. Imagine having a database of thousands of shoes that are pre-scaned and having an implementation in the current Nike
-					mobile app that allowed the user to use the camera to detect any shoe and instantly display helpful info. With ARObjects being a small file size of less
-					than 2mb, we have the potential to store many point cloud models. This is also an alternative to training models with machine learning that can lead to far more accurate results.
-					Nike has already put out ARKit features into production with their mobile app and SNKRs, so a feature like this isn't too far-fetched to be implemented. 
+					I am also more confident with my Unity skills and look forward to future projects that use the Unity SDK to create games or simulations!
 				</p>
 				<div class="text-right">
 					<a href="#" class="primary-btn">Back to top</a>

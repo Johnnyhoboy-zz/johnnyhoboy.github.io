@@ -337,7 +337,6 @@ button:focus {
   @media (max-width: 680px) {
     .banner-content {
       padding: 48px 20px;
-      background: #fff;
       margin: 0 15px; } }
   .banner-content .primary-btn {
     background: #F9F9FF;
